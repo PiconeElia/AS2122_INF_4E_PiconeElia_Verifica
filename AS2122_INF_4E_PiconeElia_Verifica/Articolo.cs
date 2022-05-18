@@ -31,6 +31,10 @@ namespace AS2122_INF_4E_PiconeElia_Verifica
         {get { return unitaDiMisura; } }
             public double Prezzo
         { get { return prezzo; } }
-        
+        //override
+        public override string ToString()
+        {
+            return $"{descrizione} {unitaDiMisura} {prezzo} ({codice})";
+        }
     }  
 }
