@@ -12,7 +12,8 @@ namespace AS2122_INF_4E_PiconeElia_Verifica
             string descrizione;
             string unitaDiMisura;
             double prezzo;
-
+        
+        //costruttore
             public Articolo(string codice, string descrizione, string unitaDiMisura, double prezzo)
             {
                 this.codice = codice;
@@ -20,10 +21,16 @@ namespace AS2122_INF_4E_PiconeElia_Verifica
                 this.unitaDiMisura = unitaDiMisura;
                 this.prezzo = prezzo;
             }
-
-            public string Codice { get { return codice; } }
-            public string Descrizione { get { return descrizione; } }
-            public string UnitaDiMisura { get { return unitaDiMisura; } }
-            public double Prezzo { get { return prezzo; } }
-        }  
+        
+        //metodi
+            public string Codice 
+        { get { return codice; } }
+            public string Descrizione 
+        { get { return descrizione; } }
+            public string UnitaDiMisura 
+        {get { return unitaDiMisura; } }
+            public double Prezzo
+        { get { return prezzo; } }
+        
+    }  
 }

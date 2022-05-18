@@ -2,7 +2,7 @@ namespace AS2122_INF_4E_PiconeElia_Verifica
 {
     public partial class GestioneForm : Form
     {
-        
+        //creazione dizionario
       Dictionary<string, Articolo> articoli;
         public GestioneForm()
         {
