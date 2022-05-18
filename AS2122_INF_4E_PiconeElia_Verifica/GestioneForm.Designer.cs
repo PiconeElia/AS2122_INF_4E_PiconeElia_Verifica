@@ -28,30 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbUnitaDiMisura = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPrezzo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescrizione = new System.Windows.Forms.TextBox();
+            this.txtCodice = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.cmbScelta = new System.Windows.Forms.ComboBox();
+            this.lstVisualizza = new System.Windows.Forms.ListBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.lblArticoli = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cmbUnitaDiMisura
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(113, 119);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(90, 23);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbUnitaDiMisura.FormattingEnabled = true;
+            this.cmbUnitaDiMisura.Location = new System.Drawing.Point(113, 119);
+            this.cmbUnitaDiMisura.Name = "cmbUnitaDiMisura";
+            this.cmbUnitaDiMisura.Size = new System.Drawing.Size(90, 23);
+            this.cmbUnitaDiMisura.TabIndex = 0;
+            this.cmbUnitaDiMisura.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -61,17 +62,18 @@
             this.label1.Size = new System.Drawing.Size(44, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Codice";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtPrezzo);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtDescrizione);
+            this.groupBox1.Controls.Add(this.txtCodice);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbUnitaDiMisura);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(21, 41);
             this.groupBox1.Name = "groupBox1";
@@ -81,13 +83,13 @@
             this.groupBox1.Text = "Dettagli Articolo";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBox3
+            // txtPrezzo
             // 
-            this.textBox3.Location = new System.Drawing.Point(113, 157);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(90, 23);
-            this.textBox3.TabIndex = 8;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtPrezzo.Location = new System.Drawing.Point(113, 157);
+            this.txtPrezzo.Name = "txtPrezzo";
+            this.txtPrezzo.Size = new System.Drawing.Size(90, 23);
+            this.txtPrezzo.TabIndex = 8;
+            this.txtPrezzo.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label4
             // 
@@ -108,21 +110,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // txtDescrizione
             // 
-            this.textBox2.Location = new System.Drawing.Point(113, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(90, 23);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtDescrizione.Location = new System.Drawing.Point(113, 77);
+            this.txtDescrizione.Name = "txtDescrizione";
+            this.txtDescrizione.Size = new System.Drawing.Size(90, 23);
+            this.txtDescrizione.TabIndex = 5;
+            this.txtDescrizione.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox1
+            // txtCodice
             // 
-            this.textBox1.Location = new System.Drawing.Point(113, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(90, 23);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtCodice.Location = new System.Drawing.Point(113, 34);
+            this.txtCodice.Name = "txtCodice";
+            this.txtCodice.Size = new System.Drawing.Size(90, 23);
+            this.txtCodice.TabIndex = 4;
+            this.txtCodice.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -142,24 +144,24 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Descrizione";
             // 
-            // comboBox2
+            // cmbScelta
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(479, 41);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(192, 23);
-            this.comboBox2.TabIndex = 4;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.cmbScelta.FormattingEnabled = true;
+            this.cmbScelta.Location = new System.Drawing.Point(479, 41);
+            this.cmbScelta.Name = "cmbScelta";
+            this.cmbScelta.Size = new System.Drawing.Size(192, 23);
+            this.cmbScelta.TabIndex = 4;
+            this.cmbScelta.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // listBox1
+            // lstVisualizza
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(479, 75);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(192, 199);
-            this.listBox1.TabIndex = 5;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.lstVisualizza.FormattingEnabled = true;
+            this.lstVisualizza.ItemHeight = 15;
+            this.lstVisualizza.Location = new System.Drawing.Point(479, 75);
+            this.lstVisualizza.Name = "lstVisualizza";
+            this.lstVisualizza.Size = new System.Drawing.Size(192, 199);
+            this.lstVisualizza.TabIndex = 5;
+            this.lstVisualizza.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button2
             // 
@@ -171,37 +173,50 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
+            // lblArticoli
+            // 
+            this.lblArticoli.AutoSize = true;
+            this.lblArticoli.Location = new System.Drawing.Point(65, 322);
+            this.lblArticoli.Name = "lblArticoli";
+            this.lblArticoli.Size = new System.Drawing.Size(59, 15);
+            this.lblArticoli.TabIndex = 7;
+            this.lblArticoli.Text = "Articoli(0)";
+            this.lblArticoli.Click += new System.EventHandler(this.label5_Click);
+            // 
             // GestioneForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblArticoli);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.lstVisualizza);
+            this.Controls.Add(this.cmbScelta);
             this.Controls.Add(this.groupBox1);
             this.Name = "GestioneForm";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private ComboBox comboBox1;
+        private ComboBox cmbUnitaDiMisura;
         private Label label1;
         private GroupBox groupBox1;
-        private TextBox textBox3;
+        private TextBox txtPrezzo;
         private Label label4;
         private Button button1;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtDescrizione;
+        private TextBox txtCodice;
         private Label label3;
         private Label label2;
-        private ComboBox comboBox2;
-        private ListBox listBox1;
+        private ComboBox cmbScelta;
+        private ListBox lstVisualizza;
         private Button button2;
+        private Label lblArticoli;
     }
 }
